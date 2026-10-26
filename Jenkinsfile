@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                 git branch: 'master' , url: 'https://github.com/dhanunjayasneha/three-tier-app.git'
+                 checkout scm
             }
         }
 
