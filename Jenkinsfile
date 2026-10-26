@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                 checkout 'https://github.com/dhanunjayasneha/three-tier-app.git'
+                 git branch: 'master' , url: 'https://github.com/dhanunjayasneha/three-tier-app.git'
             }
         }
 
